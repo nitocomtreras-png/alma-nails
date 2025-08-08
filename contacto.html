@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Transforma tus uñas en Alma Nails. Descubre nuestros servicios de manicura, diseños únicos y productos de alta calidad. ¡Agenda tu cita y siéntete radiante!">
-    
+    <meta name="description"
+        content="Transforma tus uñas en Alma Nails. Descubre nuestros servicios de manicura, diseños únicos y productos de alta calidad. ¡Agenda tu cita y siéntete radiante!">
+
     <title>Contacto - Alma Nails</title>
 
     <link rel="preconnect" href="https://www.google.com" crossorigin>
     <link rel="preconnect" href="https://wa.me" crossorigin>
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <header>
@@ -44,7 +51,9 @@
                 <section class="contact-info" aria-labelledby="contact-info-title">
                     <h2 id="contact-info-title">Información de Contacto</h2>
                     <ul>
-                        <li><strong>WhatsApp:</strong> <a href="https://wa.me/524961240745?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita.">+52 496 124 0745</a></li>
+                        <li><strong>WhatsApp:</strong> <a
+                                href="https://wa.me/524961240745?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita.">+52
+                                496 124 0745</a></li>
                     </ul>
                     <address>
                         <strong>Dirección:</strong><br>
@@ -52,11 +61,14 @@
                         Aguascalientes, MX.
                     </address>
                 </section>
-                
+
                 <section class="contact-map" aria-labelledby="map-title">
                     <h2 id="map-title">Nuestra Ubicación</h2>
                     <div id="map-facade">
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3700.7349655763865!2d-102.25601442471772!3d21.94473807994381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjHCsDU2JzQxLjEiTiAxMDLCsDE1JzEyLjQiVw!5e0!3m2!1ses-419!2smx!4v1754630313229!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3700.7349655763865!2d-102.25601442471772!3d21.94473807994381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjHCsDU2JzQxLjEiTiAxMDLCsDE1JzEyLjQiVw!5e0!3m2!1ses-419!2smx!4v1754630313229!5m2!1ses-419!2smx"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                         <button id="load-map-button" type="button">Cargar mapa interactivo</button>
                     </div>
                 </section>
@@ -66,10 +78,6 @@
 
     <footer>
         <div class="footer-container">
-            <div class="footer-social">
-                <a href="#" target="_blank" rel="noopener noreferrer">Facebook</a>
-                <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
-            </div>
             <div class="footer-info">
                 <p>&copy; 2025 Alma Nails Studio. Todos los derechos reservados.</p>
                 <p>Diseñado por Emmanuel Contreras</p>
@@ -78,12 +86,12 @@
     </footer>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const mapFacade = document.getElementById('map-facade');
             const loadMapButton = document.getElementById('load-map-button');
 
             if (loadMapButton) {
-                loadMapButton.addEventListener('click', function() {
+                loadMapButton.addEventListener('click', function () {
                     // Crea el iframe del mapa
                     const mapIframe = document.createElement('iframe');
                     mapIframe.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3702.04631398565!2d-102.2961896850529!3d21.89431898554593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDUzJzM5LjYiTiAxMDLCsDE3JzM4LjIiVw!5e0!3m2!1ses!2smx!4v1662496956636!5m2!1ses!2smx"; // Reemplazar con tu URL de Google Maps
@@ -91,7 +99,7 @@
                     mapIframe.allowfullscreen = true;
                     mapIframe.loading = 'lazy';
                     mapIframe.referrerpolicy = 'no-referrer-when-downgrade';
-                    
+
                     // Reemplaza el facade con el mapa real
                     mapFacade.innerHTML = '';
                     mapFacade.appendChild(mapIframe);
@@ -99,6 +107,42 @@
             }
         });
     </script>
-</body>
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NailSalon",
+      "name": "Alma Nails Studio",
+      "image": "https://nitocomtreras-png.github.io/studios-alma-nails/images/logo-alma-nails.jpeg",
+      "telephone": "+524961240745",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Calle Ficticia 123",
+        "addressLocality": "Aguascalientes",
+        "addressRegion": "AGS",
+        "postalCode": "20000",
+        "addressCountry": "MX"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "10:00",
+          "closes": "19:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "10:00",
+          "closes": "15:00"
+        }
+      ]
+    }
+    </script>
+    </body>
 </html>
-

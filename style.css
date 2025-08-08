@@ -1,5 +1,5 @@
 /* Importar fuentes de Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
 
 /* --- RESET Y UTILIDADES --- */
 /*
@@ -189,9 +189,6 @@ h1.banner-overlay-text { font-family: 'Playfair Display', serif; font-size: 52px
 
 /* --- Pie de Página --- */
 footer { background-color: #2D2D2D; color: #F9F9F9; padding: 40px 20px; text-align: center; }
-.footer-social { margin-bottom: 20px; }
-.footer-social a { color: #fff; text-decoration: none; margin: 0 15px; font-weight: bold; }
-.footer-social a:hover { color: #B76E79; }
 .footer-info p { margin: 5px 0; font-size: 14px; color: #ccc; }
 
 
